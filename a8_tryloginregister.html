@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark My Opinion</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="a8_style.css">
+</head>
+
+<body>
+
+    <div class="logo">
+        <img class="logo-1" src="logo05.png" alt="">
+        <img class="logo-2" src="logo003.png" alt="">
+    </div>
+
+    <div class="typewriter">
+        <h1>Your Opinion deserves a place to live.</h1>
+    </div>
+
+    <div class="buttons">
+
+        <button class="sign" id="signup">Sign Up</button>
+        <button class="sign" id="signin">Sign In</button>
+
+    </div>
+
+    <div class="popup">
+
+        <form action="">
+            <div class="close_button">&times;</div>
+            <div class="form">
+
+                <h2>Log In</h2>
+
+                <div class="form_element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="form_element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                </div>
+
+                <div class="form_element">
+                    <input type="checkbox" name="rem" id="rem">
+                    <label for="rem">Remember me?</label>
+                </div>
+
+                <div class="form_element">
+                    <button>Log In</button>
+                </div>
+
+                <div class="form_element">
+                    <a href="kucbhi">Forgot Password?</a>
+                </div>
+
+            </div>
+        </form>
+
+
+    </div>
+
+    <div class="popup-register">
+
+        <form action="">
+            <div class="close_button">&times;</div>
+            <div class="form">
+
+                <h2>register</h2>
+
+                <div class="form_element">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter name">
+                </div>
+
+                <div class="form_element">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email">
+                </div>
+
+                <div class="form_element">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="number" id="number" placeholder="Enter phone number">
+                </div>
+
+                <!-- <div class="form_element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                </div> -->
+
+                <div class="form_element">
+                    <label for="Date">Date of Birth</label>
+                    <input type="Date" name="Date" id="Date" placeholder="Enter password">
+                </div>
+                
+                <div class="form_element">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password">
+                </div>
+
+                <div class="form_element">
+                    <label for="c-password">Confirm Password</label>
+                    <input type="password" name="c-password" id="c-password" placeholder="Enter password again">
+                </div>
+
+                <!-- <div class="form_element">
+                    <input type="checkbox" name="rem" id="rem">
+                    <label for="rem">Remember me?</label>
+                </div> -->
+
+                <div class="form_element">
+                    <button>Log In</button>
+                </div>
+
+                <!-- <div class="form_element">
+                    <a href="kucbhi">Forgot Password?</a>
+                </div> -->
+
+            </div>
+        </form>
+
+        <script>
+
+            document.querySelectorAll("#signin").addEventListener("click", function(){
+                document.querySelector(".popup").classList.add("active");
+            });
+
+            document.querySelectorAll("#signup").addEventListener("click", function(){
+                document.querySelector(".popup-register").classList.add("active");
+            });
+    
+            document.querySelectorAll(".popup .close_button").addEventListener("click", function(){
+                document.querySelector(".popup").classList.remove("active");
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
